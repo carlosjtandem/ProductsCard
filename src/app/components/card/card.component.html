@@ -1,0 +1,14 @@
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{producto?.images}}" alt="Card image cap">
+    <div class="card-body">
+        <span class="btn btn-sm float-end" [ngClass]="{
+            'btn-success':producto?.category?.name?.toLowerCase()==='electronics',
+            'btn-danger':producto?.category?.name?.toLowerCase()==='clothes'
+
+        }">{{producto?.category?.name}}</span>
+        <h5 class="card-title">{{producto?.title}}</h5>
+        <h5>{{producto?.category}}</h5>
+        <p class="card-text">{{producto?.description}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
