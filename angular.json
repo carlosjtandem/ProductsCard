@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "BreakingBadCardsApp": {
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "es-PR": "src/locale/messages.es.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,6 +29,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "localize": [
+              "es-PR"
+            ],
             "outputPath": "dist/breaking-bad-cards-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
