@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './pages/main/main.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './components/card/card.component';
+import { RXJSOperatorsComponent } from './components/rxjs-operators/rxjs-operators.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    CardComponent
+    CardComponent,
+    RXJSOperatorsComponent
   ],
   imports: [
     BrowserModule,
